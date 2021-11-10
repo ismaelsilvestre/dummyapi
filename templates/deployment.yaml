@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: {{ .Release.Namespace }}
   name: {{ include "dummyapi.fullname" . }}
   labels:
     {{- include "dummyapi.labels" . | nindent 4 }}
@@ -40,11 +41,11 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8085
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8085
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

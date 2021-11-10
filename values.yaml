@@ -37,8 +37,19 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 8085
+
+containers:
+  livenessProbe:
+    httpGet:
+      path: /
+      port: 8085
+
+  readinessProbe:
+    httpGet:
+      path: /
+      port: 8085
 
 ingress:
   enabled: false
