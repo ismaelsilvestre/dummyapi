@@ -3,6 +3,16 @@ entries:
   dummyapi:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-11-11T09:15:28.9829644Z"
+    description: A Helm chart for Kubernetes
+    digest: 2e888feee81190a674a921fc10f83d392a180e49e083acac902a61d9938e8873
+    name: dummyapi
+    type: application
+    urls:
+    - https://github.com/ismaelsilvestre/dummyapi/releases/download/dummyapi-0.1.5/dummyapi-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-11-10T14:15:13.218175116Z"
     description: A Helm chart for Kubernetes
     digest: 465d6dc6a803d5d302e0c2385f9fcf6af481ac4cff5953bca1001866c2cecbfd
