@@ -3,6 +3,9 @@
 # Declare variables to be passed into your templates.
 namespace: dummyapi
 
+labels:
+  version: v2
+
 replicaCount: 1
 
 image:
