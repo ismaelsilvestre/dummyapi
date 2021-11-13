@@ -4,7 +4,7 @@
 namespace: dummyapi
 
 labels:
-  version: v1
+  version: v2
 
 replicaCount: 1
 
